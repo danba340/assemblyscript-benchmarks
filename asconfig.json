@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "release": {
+      "binaryFile": "build/mywasm.wasm",
+      "textFile": "build/mywasm.wat",
+      "optimizeLevel": 3,
+      "shrinkLevel": 0,
+      "converge": true,
+      "noAssert": true,
+      "sourceMap": true,
+      "exportRuntime": true
+    }
+  }
+}
