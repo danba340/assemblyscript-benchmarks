@@ -3,7 +3,7 @@
 Webassebly compiled from AssemblyScript
 
 ## Get started
-
+```
 npm install
 npm run asbuild
 npm run test
