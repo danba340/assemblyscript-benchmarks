@@ -1,14 +1,21 @@
 {
   "targets": {
-    "release": {
-      "binaryFile": "build/mywasm.wasm",
-      "textFile": "build/mywasm.wat",
-      "optimizeLevel": 3,
-      "shrinkLevel": 0,
-      "converge": true,
-      "noAssert": true,
+    "debug": {
+      "binaryFile": "build/untouched.wasm",
+      "textFile": "build/untouched.wat",
       "sourceMap": true,
+      "debug": true
+    },
+    "release": {
+      "binaryFile": "build/optimized.wasm",
+      "textFile": "build/optimized.wat",
+      "sourceMap": true,
+      "optimizeLevel": 3,
+      "shrinkLevel": 1,
+      "converge": false,
+      "noAssert": false,
       "exportRuntime": true
     }
-  }
+  },
+  "options": {}
 }
